@@ -1,0 +1,233 @@
+.author{
+    width: 200px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #ac0211;
+}
+
+:root{
+    --pink1: #df1519;
+    --pink2: #F61841;
+    --pink3: #CF0012;
+    --green1: #599926;
+    --green2: #2E7D39;
+    --green3: #639935;
+    --green4: #4D7627;
+}
+
+/*flower*/
+.vardi{
+    justify-content: center!important;
+    background-color: rgba(255, 239, 213, 0.239);
+}
+.tavi{
+    margin: auto;
+    position: relative;
+    width: 200px;
+    height: 300px;
+}
+.purclebi div{
+    position: absolute;
+    background-color: var(--pink1);
+    width: 50px;
+    height: 85px;
+    top: 40px;
+    transition: all 0.5s ease-out;
+}
+.purclebi div:nth-child(1){
+    border-radius: 25px;
+    height: 95px;
+    left: 75px;
+    top: 45px;
+}
+.purclebi div:nth-child(2){
+    border-radius: 0px 30px 0px 30px;
+    left: 50px;
+    background-color: var(--pink2);
+    transform-origin: bottom right;
+    animation: blossom2 12s ease-in-out infinite;
+}
+.purclebi div:nth-child(3){
+    border-radius: 30px 0px 30px 0px;
+    left: 100px;
+    background-color: var(--pink2);
+    transform-origin: bottom left;
+    animation: blossom3 12s ease-in-out infinite;
+}
+.purclebi div:nth-child(4){
+    border-radius: 0px 30px 0px 30px;
+    left: 45px;
+    top: 50px;
+    background-color: var(--pink3);
+    transform-origin: bottom right;
+    animation: blossom4 12s ease-in-out infinite;
+}
+.purclebi div:nth-child(5){
+    border-radius: 30px 0px 30px 0px;
+    left: 105px;
+    top: 50px;
+    background-color: var(--pink3);
+    transform-origin: bottom left;
+    animation: blossom5 12s ease-in-out infinite;
+}
+.purclebi div:nth-child(6){
+    border-radius: 0px 30px 0px 30px;
+    left: 50px;
+    top: 55px;
+    background-color: var(--pink1);
+    transform-origin: bottom right;
+    animation: blossom6 12s ease-in-out infinite;
+}
+.purclebi div:nth-child(7){
+    border-radius: 30px 0px 30px 0px;
+    left: 100px;
+    top: 55px;
+    background-color: var(--pink1);
+    transform-origin: bottom left;
+    animation: blossom7 12s ease-in-out infinite;
+}
+
+.yeli div{
+    position: absolute;
+    background-color: var(--green1);
+    width: 50px;
+    height: 15px;
+    top: 140px;
+    transition: all 0.5s ease-out;
+}
+.yeli div:nth-child(1){
+    left: 50px;
+    border-radius: 250px 50px 200px 5px;
+    transform-origin: bottom right;
+    animation: leafM1 12s ease-in-out infinite;
+}
+.yeli div:nth-child(2){
+    left: 100px;
+    border-radius:  50px 250px 5px 200px;
+    transform-origin: bottom left;
+    animation: leafM2 12s ease-in-out infinite;
+}
+
+.gero{
+    position: absolute;
+    background-color: var(--green3);
+    width: 8px;
+    height: 145px;
+    top: 145px;
+    left: 96px;
+    z-index: -1;
+}
+.potlebi div{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    transition: all 0.5s ease-out;
+}
+.potlebi div:nth-child(1){
+    top: 180px;
+    left: 45px;
+    background-color: var(--green2);
+    border-radius: 80px 0;
+    transform: rotateZ(100deg)
+}
+.potlebi div:nth-child(2){
+    top: 200px;
+    left: 35px;
+    background-color: var(--green4);
+    border-radius: 100px 0;
+    transform: rotateZ(60deg)
+}
+.potlebi div:nth-child(3){
+    top: 225px;
+    left: 110px;
+    background-color: var(--green4);
+    border-radius: 0px 100px;
+    transform: rotateZ(-55deg)
+}
+.potlebi div:nth-child(4){
+    top: 200px;
+    left: 100px;
+    background-color: var(--green2);
+    border-radius: 0px 80px;
+    transform: rotateZ(-90deg)
+}
+
+
+@keyframes blossom2 {
+    60%{
+      transform: rotate(-5deg);
+    } 
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes blossom3 {
+    60%{
+      transform: rotate(5deg);
+    } 
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes blossom4 {
+    60%{
+      transform: rotate(-17deg);
+    } 
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes blossom5 {
+    60%{
+      transform: rotate(17deg);
+    } 
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes blossom6 {
+    35%{
+        transform: rotate(-20deg);
+    }
+    70%{
+      transform: rotate(-40deg);
+    } 
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes blossom7 {
+    35%{
+        transform: rotate(20deg);
+    }
+    70%{
+      transform: rotate(46deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    } 
+}
+
+@keyframes leafM1 {
+    35%{
+        transform: rotate(-7deg);
+    }
+    70%{
+        transform: rotate(-15deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes leafM2 {
+    35%{
+        transform: rotate(8deg);
+    }
+    70%{
+        transform: rotate(17deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
